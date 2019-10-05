@@ -10,8 +10,8 @@ const App = () => {
     <Router>
       <div className="App"></div>
       <Route path="/login" component={LogIn} />
-      <Route path="/profile" component={Profile} />
-      <Route path="/list" component={List} />
+      {/* <Route path="/profile" component={Profile} />
+      <Route path="/list" component={List} /> */}
     </Router>
   );
 };
