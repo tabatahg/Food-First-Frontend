@@ -4,6 +4,7 @@ import "./App.css";
 // import Profile from "./components/profile/Profile";
 import List from "./components/list/List";
 import TestPage from "./components/list/TestPage";
+import LogIn from "./components/login/LogIn";
 import LandingPage from "./components/landingpage/LandingPage";
 import Profile from "./components/profile/Profile";
 
