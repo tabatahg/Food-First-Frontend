@@ -5,14 +5,17 @@ import "./App.css";
 import List from "./components/list/List";
 import TestPage from "./components/list/TestPage";
 import LandingPage from "./components/landingpage/LandingPage";
+import Profile from "./components/profile/Profile";
 
 const App = () => {
   return (
     <Router>
       <div className="App"></div>
-      <Route path="/landingpage" component={LandingPage} />
+      <Route exact={true} path="/" component={LandingPage} />
+      <Route path="/login" component={LogIn} />
       <Route path="/testpage" component={TestPage} />
       <Route path="/list" component={List} />
+      <Route path="/profile" component={Profile} />
     </Router>
   );
 };

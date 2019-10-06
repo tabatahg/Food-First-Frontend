@@ -41,7 +41,14 @@ const LogIn = () => {
           ></Input>
         </Form.Field>
         <Link to="/list">
-          <Button>Submit</Button>
+          <div className="login-button">
+            <Button>Log In</Button>
+          </div>
+        </Link>
+        <Link to="/profile">
+          <div>
+            <Button primary>Sign Up</Button>
+          </div>
         </Link>
       </Form>
     </Container>
