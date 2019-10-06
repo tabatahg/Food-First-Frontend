@@ -1,0 +1,11 @@
+.title {
+    margin-top: 30px;
+}
+
+.backgroundImage {
+    background: url("..\common\assets\foodphoto.png");
+    background-color: #1B1C1D;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
