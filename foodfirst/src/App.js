@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, withRouter } from "react-router-dom";
 import "./App.css";
 import OrganizationsList from "./components/list/OrganizationsList";
 import LogIn from "./components/login/LogIn";
-import Profile from "./components/profile/Profile";
+// import Profile from "./components/profile/Profile";
 
 import { organizations } from './data/organization';
 

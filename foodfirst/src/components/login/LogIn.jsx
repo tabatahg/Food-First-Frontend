@@ -1,16 +1,11 @@
 import React, { useState } from "react";
-import {
-  Button,
-  Container,
-  Form,
-  Grid,
-  Header,
-  Input
-} from "semantic-ui-react";
+import { Button, Container, Form, Header, Input } from "semantic-ui-react";
+import { usePosition } from "use-position";
 import "./login.css";
 
 const LogIn = () => {
   const [form, setValues] = useState({ email: "", password: "" });
+  const { latitude, longitude } = usePosition(true);
 
   const updateField = e => {
     setValues({
@@ -19,15 +14,16 @@ const LogIn = () => {
     });
   };
 
-  const handleSubmit = e => {
-    e.prevent.default();
-    const data = new FormData(e.target);
+  const handleSubmit = data => {
+    console.log(data);
   };
+
+  console.log(latitude, longitude);
 
   return (
     <Container style={{ margin: 20 }} textAlign="center">
-      <Header as="h1">Food 1st</Header>
-      <Form onSubmit={handleSubmit}>
+      <Header as="h1">Food First</Header>
+      <Form onSubmit={handleSubmit()}>
         <Form.Field>
           <label>email</label>
           <Input
@@ -48,7 +44,7 @@ const LogIn = () => {
             placeholder="password"
           ></Input>
         </Form.Field>
-        <Button>Submit</Button>
+        <Button onClick={() => handleSubmit(form)}>Submit</Button>
       </Form>
     </Container>
   );
