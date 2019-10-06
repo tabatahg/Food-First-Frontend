@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button, Container, Form, Header, Input } from "semantic-ui-react";
+import { Button, Container, Form, Input } from "semantic-ui-react";
 import "./login.css";
 import { Link } from "react-router-dom";
 
@@ -19,7 +19,6 @@ const LogIn = () => {
 
   return (
     <Container style={{ margin: 20 }} textAlign="center">
-      <Header as="h1">Food First</Header>
       <Form onSubmit={handleSubmit()}>
         <Form.Field>
           <label>email</label>
