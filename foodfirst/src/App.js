@@ -13,9 +13,8 @@ const App = () => {
       <div className="App"></div>
       <Route path="/landingpage" component={LandingPage} />
       <Route path="/login" component={LogIn} />
-      {/* <Route path="/profile" component={Profile} />*/}
       <Route path="/testpage" component={TestPage} />
-      <Route path="/List" component={List} />
+      <Route path="/list" component={List} />
     </Router>
   );
 };
