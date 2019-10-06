@@ -6,7 +6,7 @@ export const FilterList = organizations => {
 
   const organizationsByDistance = organization => {
     const distance = getDistance(
-      { latitude: parseFloat(latitude), longitude: parseFloat(longitude) },
+      { latitude: parseFloat(34.084), longitude: parseFloat(-118.4) },
       {
         latitude: parseFloat(organization.latitude),
         longitude: parseFloat(organization.longitude)

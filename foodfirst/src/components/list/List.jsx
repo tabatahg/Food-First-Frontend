@@ -5,6 +5,7 @@ import { FilterList } from "./FilterList";
 
 const List = () => {
   const organizedList = FilterList(organizations);
+
   return <OrganizationsList organizations={organizedList} />;
 };
 

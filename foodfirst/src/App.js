@@ -1,7 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, withRouter } from "react-router-dom";
 import "./App.css";
-import LogIn from "./components/login/LogIn";
 // import Profile from "./components/profile/Profile";
 import List from "./components/list/List";
 import TestPage from "./components/list/TestPage";
@@ -12,7 +11,6 @@ const App = () => {
     <Router>
       <div className="App"></div>
       <Route path="/landingpage" component={LandingPage} />
-      <Route path="/login" component={LogIn} />
       <Route path="/testpage" component={TestPage} />
       <Route path="/list" component={List} />
     </Router>
