@@ -47,3 +47,36 @@
   font-size: 10px;
   color: gray;
 }
+
+.organization-details-photo {
+  width: 100%;
+}
+
+.top-photo {
+  width: 100%;
+  height: 350px;
+}
+
+.organization-details-info {
+  margin: 10px;
+}
+
+.organization-details-name {
+  font-weight: bold;
+  font-size: 28px;
+  margin: 10px 0;
+}
+
+.organization-details-address {
+  font-size: 12px;
+  margin: 10px 0;
+}
+
+.disclaimer {
+  font-weight: bold;
+  font-size: 12px;
+}
+
+hr {
+  height: 10px;
+}

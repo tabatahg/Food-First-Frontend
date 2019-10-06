@@ -4,7 +4,6 @@ import { Responsive, Segment } from 'semantic-ui-react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import OrganizationDetails from "./OrganizationDetails";
 
-
 import './organization_list.css'
 import shanes_cafe from '../../data/photos/shanes_cafe.jpg';
 import ralphs from '../../data/photos/ralphs.jpg';
@@ -39,7 +38,11 @@ const OrganizationsList = ({ organizations }) => {
         </Segment.Group>
       )}/>
 
-      <Route path="/organizations/:id" component={OrganizationDetails} />
+      <Route
+        path="/organizations/:id"
+        component={OrganizationDetails}
+        render={(props) => <OrganizationDetails {...props} organizations={organizations} />}
+      />
     </Router>
   )
 }

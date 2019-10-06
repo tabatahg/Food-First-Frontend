@@ -12,11 +12,16 @@ const App = () => {
   return (
     <Router>
       <div className="App"></div>
-      <Route path="/login" component={LogIn} />
-      {/* <Route path="/profile" component={Profile} />
-      <Route path="/list" component={List} /> */}
-      <Route path="/testpage" component={TestPage} />
-      <OrganizationsList organizations={organizations} />
+        <Route path="/login" component={LogIn} />
+
+        {/* <Route path="/profile" component={Profile} />
+        <Route path="/list" component={List} /> */}
+
+        <Route
+          path="/list"
+          render={(props) => <OrganizationsList {...props} organizations={organizations} />}
+        />
+
     </Router>
   );
 };
