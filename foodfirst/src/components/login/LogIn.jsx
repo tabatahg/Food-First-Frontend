@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 import { Button, Container, Form, Header, Input } from "semantic-ui-react";
-import { usePosition } from "use-position";
 import "./login.css";
+import { Link } from "react-router-dom";
 
 const LogIn = () => {
   const [form, setValues] = useState({ email: "", password: "" });
-  const { latitude, longitude } = usePosition(true);
 
   const updateField = e => {
     setValues({
@@ -17,8 +16,6 @@ const LogIn = () => {
   const handleSubmit = data => {
     console.log(data);
   };
-
-  console.log(latitude, longitude);
 
   return (
     <Container style={{ margin: 20 }} textAlign="center">
@@ -44,7 +41,9 @@ const LogIn = () => {
             placeholder="password"
           ></Input>
         </Form.Field>
-        <Button onClick={() => handleSubmit(form)}>Submit</Button>
+        <Link to="/list">
+          <Button>Submit</Button>
+        </Link>
       </Form>
     </Container>
   );
