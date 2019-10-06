@@ -1,0 +1,49 @@
+.organizations-list {
+  text-align: center;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.organization-item {
+  border: 1px solid black;
+  height: 75px;
+  position:relative;
+  margin-bottom: 10px;
+  background: #f9f9f9;
+}
+
+.organization-photo {
+  display: block;
+  position: absolute;
+  left: 0px;
+}
+
+.organization-distance {
+  display: block;
+  position: absolute;
+  right: 0px;
+}
+
+.organization-info {
+  position: absolute;
+  left: 108px;
+}
+
+.organization-name {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.organization-address {
+  font-size: 12px;
+}
+
+.organization-type {
+  font-size: 10px;
+  color: gray;
+}
+
+.organization-distance {
+  font-size: 10px;
+  color: gray;
+}
